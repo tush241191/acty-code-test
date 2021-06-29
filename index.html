@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <!-- App CSS -->
+    <link href="./css/app.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- MAIN CONTAINER START -->
+    <div class="bg-white">
+        <!-- HEADER START -->
+        <header>
+            <div class="relative bg-blue-700">
+                <!-- MAX WIDTH IS 1280px -->
+                <div
+                    class="w-full h-20 max-w-screen-xl mx-auto flex justify-between items-center px-4 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+                    <!-- LOGO -->
+                    <div class="w-7/12 flex justify-end md:justify-start md:w-auto">
+                        <a href="#">
+                            <span class="sr-only">acty</span>
+                            <img class="h-8 w-auto sm:h-10"
+                                src="https://www.acty.ee/wp-content/uploads/2019/10/acty_logo_white.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- HAMBERGER MENU FOR MOBILE START -->
+                    <div class="w-5/12 flex justify-end -mr-2 -my-2 md:hidden">
+                        <button onclick="toggleMenu()" id="open-mobile-menu" type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- HAMBERGER MENU FOR MOBILE END -->
+                    <!-- DESKTOP NAVBAR START -->
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Brushes
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Buckets
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Brooms
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Poles
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Vacuum cleaners
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Cleansers
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Cleaning tools
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-100 hover:text-blue-700">
+                            Discount
+                        </a>
+                    </nav>
+                    <!-- DESKTOP NAVBAR END -->
+                </div>
+                <!-- MOBILE MENU START -->
+                <div id="mobile-menu-container" class="hidden absolute h-screen z-30 top-0 inset-x-0 transition transform origin-top-right md:hidden">
+                    <div
+                        class="ring-0 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                        <div class="p-2">
+                            <div class="flex items-center justify-between">
+                                <!-- LOGO -->
+                                <div>
+                                    <img class="h-8 w-auto"
+                                        src="https://www.acty.ee/wp-content/uploads/2019/10/acty_logo_blue.svg"
+                                        alt="acty">
+                                </div>
+                                <div class="-mr-2">
+                                    <button onclick="toggleMenu()" id="close-mobile-menu" type="button"
+                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-blue-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                        <span class="sr-only">Close menu</span>
+                                        <!-- Heroicon name: outline/x -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <!-- MOBILE NAVBAR START -->
+                                <nav class="grid grid-cols-1 gap-7">
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Brushes
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Buckets
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Brooms
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Poles
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Vacuum cleaners
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Cleansers
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700">
+                                            Cleaning tools
+                                        </div>
+                                    </a>
+                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                                        <div class="ml-4 text-base font-medium text-gray-900 hover:text-blue-700 uppercase">
+                                            Discount
+                                        </div>
+                                    </a>
+                                </nav>
+                                <!-- MOBILE NAVBAR START -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MOBILE MENU END -->
+            </div>
+        </header>
+        <!-- HEADER END -->
+    </div>
+    <!-- MAIN CONTAINER END -->
+</body>
+
+<!-- App Javascript -->
+<script src="./js/app.js"></script>
+
+</html>
