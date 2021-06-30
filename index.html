@@ -16,6 +16,7 @@
 
     <!-- CONTAINER START -->
     <div class="bg-white">
+
         <!-- HEADER CONTENT BAR START -->
         <div class="w-full h-10 bg-black flex items-center justify-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
@@ -23,7 +24,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
             </svg>
-            <span class="text-white text-sm cursor-pointer hover:underline">Click here to subscribe to get latest update</span>
+            <span class="text-white text-sm cursor-pointer hover:underline">Click here to subscribe to get latest
+                update</span>
         </div>
         <!-- HEADER CONTENT BAR END -->
 
@@ -58,10 +60,63 @@
                     <!-- HAMBERGER MENU FOR MOBILE END -->
                     <!-- DESKTOP NAVBAR START -->
                     <nav class="hidden h-full lg:flex">
-                        <a href="#"
-                            class="h-full flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate">
-                            Brushes
-                        </a>
+                        <!-- MENU WITH SUBITEMS -->
+                        <div class="menu relative">
+                            <button type="button"
+                                class="h-full group inline-flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate"
+                                aria-expanded="false">
+                                <span>Brushes</span>
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <!-- SUB ITEMS  -->
+                            <div
+                                class="menu-item hidden absolute z-10 left-1/2 transform -translate-x-1/2 px-2 w-48 sm:px-0">
+                                <div class="mt-1 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-2 bg-white py-4">
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 1
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 2
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 3
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 4
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 5
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#"
                             class="h-full flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate">
                             Buckets
@@ -70,10 +125,63 @@
                             class="h-full flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate">
                             Brooms
                         </a>
-                        <a href="#"
-                            class="h-full flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate">
-                            Poles
-                        </a>
+                        <!-- MENU WITH SUBITEMS -->
+                        <div class="menu relative">
+                            <button type="button"
+                                class="h-full group inline-flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate"
+                                aria-expanded="false">
+                                <span>Poles</span>
+                                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <!-- SUB ITEMS  -->
+                            <div
+                                class="menu-item hidden absolute z-10 left-1/2 transform -translate-x-1/2 px-2 w-48 sm:px-0">
+                                <div class="mt-1 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid gap-2 bg-white py-4">
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 1
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 2
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 3
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 4
+                                            </p>
+                                        </a>
+
+                                        <a href="#"
+                                            class="px-6 py-2 block rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+                                            <p class="text-sm font-normal text-gray-900 truncate">
+                                                Child link 5
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#"
                             class="h-full flex items-center text-base font-medium text-gray-100 hover:text-blue-600 hover:bg-white px-4 truncate">
                             Vacuum cleaners
