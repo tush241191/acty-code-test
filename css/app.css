@@ -6,3 +6,20 @@
     color: #2463eb;
     background-color: #fff;
 }
+
+.mobile-menu:hover .mobile-menu-item {
+    display: block;
+}
+
+.mobile-menu:hover .chevron-down {
+    display: none;
+}
+
+.mobile-menu:hover .chevron-up {
+    display: block;
+}
+
+.mobile-menu:hover button {
+    color: #2463eb;
+    background-color: #fff;
+}
